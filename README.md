@@ -1,0 +1,1 @@
+This is simple es2015 express template.
