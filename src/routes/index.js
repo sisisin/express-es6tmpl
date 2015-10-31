@@ -3,8 +3,12 @@ import express from 'express';
 const router = express.Router();
 
 /* GET home page. */
-router.get('/', (req, res, next) => {
+
+const getIndex = (req, res, next) => {
 	res.render('index', { 'title': 'Express' });
-});
+};
+
+router.get('/', getIndex);
 
 export { router as routes };
+export { getIndex };	// for test

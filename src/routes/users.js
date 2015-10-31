@@ -3,8 +3,11 @@ import express from 'express';
 const router = express.Router();
 
 /* GET users listing. */
-router.get('/', (req, res, next) => {
+const getUsers = (req, res, next) => {
 	res.send('respond with a resource');
-});
+};
+
+router.get('/', getUsers);
 
 export { router as users };
+export { getUsers };	// for test

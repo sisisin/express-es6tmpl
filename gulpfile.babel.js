@@ -5,7 +5,7 @@ import eslint from 'gulp-eslint';
 import babel from 'gulp-babel';
 import mocha from 'gulp-mocha';
 
-const lintPath = ['./*.js', './src/*.js', './src/routes/*.js'];
+const lintPath = ['./*.js', './src/*.js', './src/routes/*.js', 'test/**/*.js'];
 const testPath = ['./test/**/*.js'];
 const jadePath = ['./src/views/**.jade'];
 const staticPath = ['./src/public/**/**.*'];
