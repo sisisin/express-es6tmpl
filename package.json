@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./dest/bin/www"
+    "start": "node ./dest/bin/www",
+    "test": "gulp mocha",
+    "build": "gulp build",
+    "lint": "gulp lint"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
